@@ -16,7 +16,7 @@ const reverse = ( str ) => {
 	return result;
 }
 
-console.log( ':' + reverse( ' A fun little challenge! ' )  + ':' );
+console.log( reverse( ' A fun little challenge! ' ) );
 
 
 // Более сложный вариант реализации, который сохраняет исходное количество пробелов между словами в переданной строке
@@ -60,4 +60,4 @@ const reverseSmart = ( str ) => {
  	return result;
 }
 
-console.log( ':' + reverseSmart( ' A fun little challenge! ' ) + ':');
+console.log( reverseSmart( ' A fun little challenge! ' ) );
