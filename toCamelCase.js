@@ -1,6 +1,5 @@
 const toCamelCase = ( str ) => {
 	let result = '';
-
 	for( let i = 0; i < str.length; i += 1 ) {
 		if( str[i] === '-' || str[i] === '_' ) {
 			continue;
@@ -12,7 +11,6 @@ const toCamelCase = ( str ) => {
 			result += str[i];
 		}
 	}
-
 	return result;
 }
 

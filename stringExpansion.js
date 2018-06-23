@@ -1,6 +1,5 @@
 const stringExpansion = ( str ) => {
 	let result = '';
-
 	for( let i = 0; i < str.length; i += 1 ) {
 
 		// Если это не число
@@ -16,7 +15,6 @@ const stringExpansion = ( str ) => {
 			}
 		}
 	}
-
 	return result;
 }
 

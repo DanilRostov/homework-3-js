@@ -2,7 +2,6 @@
 const reverse = ( str ) => {
 	let result = '';
 	let words = str.split( ' ' );
-
 	for( let i = 0; i < words.length; i += 1 ) {
 		if( words[i] === '' ) {
 			result += ' ';
@@ -12,7 +11,6 @@ const reverse = ( str ) => {
 			result += words[i].split('').reverse().join('') + ' ';
 		}
 	}
-
 	return result;
 }
 
@@ -24,7 +22,6 @@ const reverseSmart = ( str ) => {
 	let words = str.split( ' ' );
 	let wordsWithSpaces = [];
 	let result = '';
-
 	// Вспомогательная функция, которая проверяет является ли переданный элемент последним словом в переданном массиве, состоящем из слов и пробелов
 	const isItLastWord = ( arr, itemOrder ) => {
 		for( let i = itemOrder + 1; i < arr.length; i += 1 ) {
@@ -32,10 +29,8 @@ const reverseSmart = ( str ) => {
 				return false;
 			}
 		}
-
 		return true;
 	};
-
 	// Цикл, который формирует массив из строк и пробелов
 	for( let i = 0; i < words.length; i += 1 ) {
 		if( words[i] === '' ) {
@@ -47,7 +42,6 @@ const reverseSmart = ( str ) => {
 			wordsWithSpaces.push( ' ' );
 		}
 	}
-
 	// Цикл, которые переворачивает каждое слово в массиве
 	for( let i = 0; i < wordsWithSpaces.length; i += 1 ) {
 		if( wordsWithSpaces[i] === ' ' ) {
@@ -56,7 +50,6 @@ const reverseSmart = ( str ) => {
 			result += wordsWithSpaces[i].split('').reverse().join('');
 		}
 	}
-
  	return result;
 }
 
